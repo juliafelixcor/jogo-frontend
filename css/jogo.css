@@ -1,0 +1,93 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #FFD93D;
+    color: #000;
+}
+
+#tabuleiro {
+    margin: 20px auto;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    font-size: 40px;
+    cursor: pointer;
+    background: #1E1E1E; 
+    color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+td.revelada {
+    background: #FFFFFF;
+    color: #000;
+}
+
+td.acertou {
+    background: #00C853;
+    color: #fff;
+}
+
+td.erro {
+    background: #D50000;
+    color: #fff;
+}
+
+#placar {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.turno {
+    color: #1E1E1E;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+td.acertando {
+    background: #00C853;
+    color: #fff;
+}
+
+td.acertou {
+    background: #ffffff;
+    color: #000;
+}
+
+#log {
+    margin: 20px auto;
+    width: 250px;
+    padding: 0;
+}
+
+#log li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    font-weight: normal;
+    transition: 0.2s;
+}
+
+#log li.recente {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#log li.acerto {
+    background: #00C853;
+    color: white;
+}
+
+#log li.erro {
+    background: #D50000;
+    color: white;
+}
+
