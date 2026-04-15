@@ -1,11 +1,11 @@
 body {
-    margin: 0; /* Adicione isso */
+    margin: 0;
     font-family: Arial;
     background: #FFD93D;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Corrigido de px para vh */
+    height: 100vh;
 }
 
 .container {
