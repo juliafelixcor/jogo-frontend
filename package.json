@@ -1,0 +1,30 @@
+{
+  "name": "memoji-multiplayer",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n FRONTEND,BACKEND -c yellow,cyan \"vite --host 0.0.0.0\" \"node server/index.js\"",
+    "dev:frontend": "vite --host 0.0.0.0",
+    "dev:backend": "node server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^10.0.3",
+    "vite": "^8.0.16"
+  },
+  "overrides": {
+    "ws": "^8.21.0"
+  }
+}
